@@ -2,8 +2,12 @@
 import pandas as pd
 
 
-file = "Comparison_of_accounting_software_0_raw.csv"
+file = "Accounting_Soft/Comparison_of_accounting_software_0_raw.csv"
 df = pd.read_csv(file)
+
+df2 = df["Market focus"].str.get_dummies(",")
+df3 = df["Structure"].str.get_dummies(",")
+df4 = df["Language"].str.get_dummies(",")
 
 df_2 = pd.get_dummies(df, columns=['Market focus', 'Structure', 'Language'], dtype=int)
 df_2.drop(["License", "Windows", "Mac OS", "Linux", "Other Features"], axis=1, inplace=True)
@@ -16,4 +20,4 @@ df_2.replace("no", "0", inplace=True)
 df_2.fillna("0", inplace=True)
 
 print(df_2.head())
-df_2.to_csv("Cleaned/cleanSoft.csv")
+df_2.to_csv("Cleaned/cleanSoft.csv", index=False)
