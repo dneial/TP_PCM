@@ -1,0 +1,4 @@
+,"Computer architecture supported_68k, PowerPC","Computer architecture supported_x86, x86-64, ARM","Computer architecture supported_x86, x86-64, ARM, PowerPC, SPARC, others",Kernel type_Hybrid,Kernel type_Monolithic with modules,"File system supported_HFS+, HFS, MFS (Mac OS 8.0 and before), AFP, ISO 9660, FAT(System 7 and later), UDF","File system supported_NTFS, FAT exFAT ISO 9660, UDF; 3rd-party drivers support ext2, ext3, ReiserFS, HFS+, FATX, and HFS (with third party driver)","File system supported_ext2, ext3, ext4, btrfs, ReiserFS, FAT, ISO 9660, UDF, NFS, and others"
+10,0,0,1,0,1,0,0,1
+11,1,0,0,0,1,1,0,0
+29,0,1,0,1,0,0,1,0
