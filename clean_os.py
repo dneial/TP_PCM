@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-file = "./Comparison_of_operating_systems_1/Comparison_of_operating_systems_1_raw.csv"
+file = "./OS/Comparison_of_operating_systems_1_raw.csv"
 df = pd.read_csv(file)
 
 oss = ["Linux", "Windows (NT family)", "Mac OS Classic"]
