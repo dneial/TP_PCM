@@ -24,4 +24,4 @@ df = pd.concat([df, df2, df3], axis=1, join="inner")
 
 df.replace("Windows (NT family)", "Windows", inplace=True)
 df.replace("Mac OS Classic", "Mac OS", inplace=True)
-df.to_csv("./Comparison_of_operating_systems_1/clean_os.csv", index=False)
+df.to_csv("./Cleaned/clean_os.csv")

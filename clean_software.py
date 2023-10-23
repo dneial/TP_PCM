@@ -16,4 +16,4 @@ df_2.replace("no", "0", inplace=True)
 df_2.fillna("0", inplace=True)
 
 print(df_2.head())
-# df_2.to_csv("clean.csv")
+df_2.to_csv("Cleaned/cleanSoft.csv")
