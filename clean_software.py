@@ -2,7 +2,7 @@
 import pandas as pd
 
 
-file = "Accounting_Soft/Comparison_of_accounting_software_0_raw.csv"
+file = "./Accounting_soft/Comparison_of_accounting_software_0_raw.csv"
 df = pd.read_csv(file)
 
 df2 = df["Market focus"].str.get_dummies(",")
