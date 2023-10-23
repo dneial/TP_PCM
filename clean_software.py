@@ -2,22 +2,22 @@
 import pandas as pd
 
 
-file = "./Accounting_soft/Comparison_of_accounting_software_0_raw.csv"
+file = "./Accounting_Soft/Comparison_of_accounting_software_0_raw.csv"
 df = pd.read_csv(file)
 
 df2 = df["Market focus"].str.get_dummies(",")
 df3 = df["Structure"].str.get_dummies(",")
 df4 = df["Language"].str.get_dummies(",")
 
-df_2 = pd.get_dummies(df, columns=['Market focus', 'Structure', 'Language'], dtype=int)
-df_2.drop(["License", "Windows", "Mac OS", "Linux", "Other Features"], axis=1, inplace=True)
+df.drop(["License", "Windows", "Mac OS", "Linux", "Other Features"], axis=1, inplace=True)
+df = pd.concat([df["Package"], df2, df3, df4], axis=1)
 
 
-df_2.replace("Yes", "1", inplace=True)
-df_2.replace("yes", "1", inplace=True)
-df_2.replace("No", "0", inplace=True)
-df_2.replace("no", "0", inplace=True)
-df_2.fillna("0", inplace=True)
+df.replace("Yes", "1", inplace=True)
+df.replace("yes", "1", inplace=True)
+df.replace("ltd", "1", inplace=True)
+df.replace("No", "0", inplace=True)
+df.replace("no", "0", inplace=True)
+df.fillna("0", inplace=True)
 
-print(df_2.head())
-df_2.to_csv("Cleaned/cleanSoft.csv", index=False)
+df.to_csv("Cleaned/cleanSoft.csv", index=False)
