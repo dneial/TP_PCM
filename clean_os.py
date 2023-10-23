@@ -19,4 +19,4 @@ df = pd.get_dummies(df, columns=features, dtype=int)
 
 
 print(df.head())
-df.to_csv("./Comparison_of_operating_systems_1/clean_os.csv")
+df.to_csv("./Cleaned/clean_os.csv")
