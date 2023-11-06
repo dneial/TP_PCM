@@ -1,4 +1,0 @@
-Name,Kernel type_Hybrid,Kernel type_Monolithic with modules, AFP, FAT, FAT exFAT ISO 9660, FAT(System 7 and later), FATX, HFS, HFS+, ISO 9660, MFS (Mac OS 8.0 and before), NFS, ReiserFS, UDF, UDF; 3rd-party drivers support ext2, and HFS (with third party driver), and others, btrfs, ext3, ext4,HFS+,NTFS,ext2, ARM, PowerPC, SPARC, others, x86-64,68k,x86
-Linux,0,1,0,1,0,0,0,0,0,1,0,1,1,1,0,0,1,1,1,1,0,0,1,1,1,1,1,1,0,1
-Mac OS Classic,0,1,1,0,0,1,0,1,0,1,1,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0
-Windows (NT family),1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,1,0,0,1,0,0,1,0,1,0,0,0,1,0,1
