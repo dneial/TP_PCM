@@ -1,0 +1,9 @@
+java -jar fca4j.jar family softwaresRCFT.rcft -a IMPORT Cleaned/clean_os.csv -n os -x CSV -s COMMA
+
+java -jar fca4j.jar family softwaresRCFT.rcft -a IMPORT Cleaned/clean_license.csv -n licenses -x CSV
+
+java -jar fca4j.jar family softwaresRCFT.rcft -a IMPORT Cleaned/clean_soft.csv -n softwares -x CSV
+
+java -jar fca4j.jar family softwaresRCFT.rcft -a IMPORT Cleaned/software2license.csv -n software2license -x CSV -v -s COMMA -op exist -source softwares -target licenses
+
+java -jar fca4j.jar family softwaresRCFT.rcft -a IMPORT Cleaned/software2os.csv -n software2os -x CSV -v -s COMMA -op exist -source softwares -target os
