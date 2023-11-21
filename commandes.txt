@@ -7,3 +7,17 @@ java -jar fca4j.jar family softwaresRCFT.rcft -a IMPORT Cleaned/clean_soft.csv -
 java -jar fca4j.jar family softwaresRCFT.rcft -a IMPORT Cleaned/software2license.csv -n software2license -x CSV -v -s COMMA -op exist -source softwares -target licenses
 
 java -jar fca4j.jar family softwaresRCFT.rcft -a IMPORT Cleaned/software2os.csv -n software2os -x CSV -v -s COMMA -op exist -source softwares -target os
+
+mkdir results
+
+java -jar fca4j.jar RCA softwaresRCFT.rcft ./results -v -a ADD_EXTENT
+
+dot -Tpdf results/step2.dot -o results/resultat.pdf
+
+mkdir rules/software2os
+
+java -jar fca4j.jar RULEBASIS Cleaned/software2os.csv -i CSV -folder ./rules/software2os
+
+mkdir rules/software2license
+
+java -jar fca4j.jar RULEBASIS Cleaned/software2license.csv -i CSV -folder ./rules/software2license

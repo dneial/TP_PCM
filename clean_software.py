@@ -9,8 +9,11 @@ def gen_software_fc(file: str):
 
     df3 = df["Structure"].str.get_dummies(",")
     df4 = df["Language"].str.get_dummies(",")
-    df.drop(["License", "Windows", "Mac OS", "Linux", "Other Features"],
-            axis=1, inplace=True)
+    df.drop(
+        ["License", "Windows", "Mac OS", "Linux", "Other Features"],
+        axis=1,
+        inplace=True,
+    )
     df = pd.concat([df["Package"], df2, df3, df4], axis=1)
 
     df.replace("Yes", "1", inplace=True)
@@ -25,7 +28,7 @@ def gen_software_fc(file: str):
 
 def gen_software2os(file: str):
     df = pd.read_csv(file)
-    os_list = ["Package","Windows", "Mac OS", "Linux"]
+    os_list = ["Package", "Windows", "Mac OS", "Linux"]
 
     cols_todrop = [col for col in df.columns if col not in os_list]
     df.drop(cols_todrop, axis=1, inplace=True)
@@ -37,7 +40,7 @@ def gen_software2os(file: str):
 
 def gen_software2license(file: str):
     df = pd.read_csv(file)
-    os_list = ["Package","License"]
+    os_list = ["Package", "License"]
     cols_todrop = [col for col in df.columns if col not in os_list]
     df.drop(cols_todrop, axis=1, inplace=True)
 
@@ -50,6 +53,6 @@ def gen_software2license(file: str):
 
 if __name__ == "__main__":
     file = "./Accounting_Soft/Comparison_of_accounting_software_0_raw.csv"
-    # gen_software_fc(file)
-    # gen_software2os(file)
+    gen_software_fc(file)
+    gen_software2os(file)
     gen_software2license(file)

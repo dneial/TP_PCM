@@ -10,6 +10,7 @@ FormalContext licenses
 |CPAL|x|x||x|x|x|x|
 |AGPL|x||x|x|x|x|x|
 |GPL2|x|x||x|x|x|x|
+|GPL3|x||x|x|x|x|x|
 |GPL|x||x|x|x|x|x|
 |MPL|x||x|x|x|x|x|
 
@@ -38,23 +39,47 @@ RelationalContext software2license
 source softwares
 target licenses
 scaling exist
-||AGPL|Apache License|CPAL|GPL|GPL2|GPL3|MPL|
-|Adempiere||||x||||
-|Apache OFBiz||x||||||
-|Compiere|||||x|||
-|FrontAccounting||||||x||
-|GnuCash||||x||||
-|GNU Enterprise||||x||||
-|HomeBank||||x||||
-|iDempiere|||||x|||
-|JFire||||x||||
-|KMyMoney||||x||||
-|LedgerSMB||||x||||
+||Apache License|CPAL|AGPL|GPL2|GPL3|GPL|MPL|
+|Adempiere||||||x||
+|Apache OFBiz|x|||||||
+|Compiere||||x||||
+|FrontAccounting|||||x|||
+|GnuCash||||||x||
+|GNU Enterprise||||||x||
+|HomeBank||||||x||
+|iDempiere||||x||||
+|JFire||||||x||
+|KMyMoney||||||x||
+|LedgerSMB||||||x||
 |Openbravo|||||||x|
-|Odoo|x|||||||
-|Postbooks|||x|||||
-|SQL-Ledger||||x||||
-|Tryton||||x||||
-|TurboCASH||||x||||
-|webERP||||x||||
+|Odoo|||x|||||
+|Postbooks||x||||||
+|SQL-Ledger||||||x||
+|Tryton||||||x||
+|TurboCASH||||||x||
+|webERP||||||x||
+
+RelationalContext software2os
+source softwares
+target os
+scaling exist
+||Windows|Mac OS|Linux|
+|Adempiere|x|x|x|
+|Apache OFBiz|x|x|x|
+|Compiere|x|x|x|
+|FrontAccounting|x|x|x|
+|GnuCash|x|x|x|
+|GNU Enterprise|x|x|x|
+|HomeBank|x|x|x|
+|iDempiere|x|x|x|
+|JFire|x||x|
+|KMyMoney|x|x|x|
+|LedgerSMB|x|x|x|
+|Openbravo|x|x|x|
+|Odoo|x|x|x|
+|Postbooks|x|x|x|
+|SQL-Ledger|x|x|x|
+|Tryton|x|x|x|
+|TurboCASH|x|x||
+|webERP|x|x|x|
 
