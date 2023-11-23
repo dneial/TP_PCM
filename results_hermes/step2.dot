@@ -1,0 +1,124 @@
+digraph G { 
+	rankdir=BT;
+subgraph os { 
+label="os";
+5 [shape=record,label="{Concept_os_5|FAT\nNFS\nand others\nbtrfs\next4\next2\nSPARC\nothers\n|Linux\n}"];
+6 [shape=record,label="{Concept_os_6|AFP\nFAT(System 7 and later)\nHFS\nMFS (Mac OS 8.0 and before)\nHFS+\n68k\n|Mac OS\n}"];
+7 [shape=record,label="{Concept_os_7|Kernel type_Hybrid\nFAT exFAT ISO 9660\nFATX\nHFS+\nUDF; 3rd-party drivers support ext2\nand HFS (with third party driver)\nNTFS\n|Windows\n}"];
+8 [shape=record,label="{Concept_os_8|Kernel type_Monolithic with modules\nISO 9660\nUDF\nPowerPC\n|}"];
+9 [shape=record,label="{Concept_os_9|ReiserFS\next3\nARM\nx86-64\nx86\n|}"];
+	5 -> 8
+	6 -> 8
+	5 -> 9
+	7 -> 9
+}
+subgraph licenses { 
+label="licenses";
+10 [shape=record,label="{Concept_licenses_10|GPL (v3) compatibility_Yes\n|Apache License\nAGPL\nGPL3\nGPL\nMPL\n}"];
+11 [shape=record,label="{Concept_licenses_11|GPL (v3) compatibility_No\n|CPAL\nGPL2\n}"];
+12 [shape=record,label="{Concept_licenses_12|FSF approval_Yes\nOSI approval_Yes\nCopyfree approval_No\nDebian approval_Yes\nFedora approval_Yes\n|}"];
+	10 -> 12
+	11 -> 12
+}
+subgraph softwares { 
+label="softwares";
+27 [shape=record,label="{Concept_softwares_27|GlassFish\nJava on JBoss\n|Adempiere\n}"];
+28 [shape=record,label="{Concept_softwares_28|OSGi\nOracle\nJava on Tomcat\n|iDempiere\n}"];
+29 [shape=record,label="{Concept_softwares_29|On Demand\nSaas\non-premise\n|Openbravo\n}"];
+30 [shape=record,label="{Concept_softwares_30|Java EE\n|Compiere\n}"];
+31 [shape=record,label="{Concept_softwares_31|PHP\n|FrontAccounting\nwebERP\n}"];
+32 [shape=record,label="{Concept_softwares_32|personal and small enterprise\nScheme\n|GnuCash\n}"];
+33 [shape=record,label="{Concept_softwares_33|GTK+\n|HomeBank\n}"];
+35 [shape=record,label="{Concept_softwares_35|Perl\n|LedgerSMB\nSQL-Ledger\n}"];
+36 [shape=record,label="{Concept_softwares_36||Odoo\n}"];
+37 [shape=record,label="{Concept_softwares_37|Client-server\nQt\n|Postbooks\n}"];
+38 [shape=record,label="{Concept_softwares_38|Thin client - Server or Stand alone\n|Tryton\n}"];
+40 [shape=record,label="{Concept_softwares_40|small to mid-sized enterprises\nCloud Hostable\nWeb Access\nMulti-User\n|Apache OFBiz\n}"];
+41 [shape=record,label="{Concept_softwares_41|mid to high end market\nWeb based + stand alone\n|GNU Enterprise\n}"];
+34 [shape=record,label="{Concept_softwares_34|all markets\nStand alone\n|JFire\n}"];
+42 [shape=record,label="{Concept_softwares_42||KMyMoney\n}"];
+39 [shape=record,label="{Concept_softwares_39|Delphi\n|TurboCASH\n}"];
+48 [shape=record,label="{Concept_softwares_48|Python\n|}"];
+49 [shape=record,label="{Concept_softwares_49|personal\nstand alone\n|}"];
+43 [shape=record,label="{Concept_softwares_43|PostgreSQL\n|}"];
+52 [shape=record,label="{Concept_softwares_52|C\n|}"];
+46 [shape=record,label="{Concept_softwares_46|mid-market\n|}"];
+47 [shape=record,label="{Concept_softwares_47|Java\n|}"];
+54 [shape=record,label="{Concept_softwares_54|exist_software2license(C_licenses_11)\n|}"];
+50 [shape=record,label="{Concept_softwares_50|Stand alone\n|}"];
+51 [shape=record,label="{Concept_softwares_51|Web based and Client-server\n|}"];
+53 [shape=record,label="{Concept_softwares_53|C++\n|}"];
+44 [shape=record,label="{Concept_softwares_44|Web based\n|}"];
+45 [shape=record,label="{Concept_softwares_45|low to mid-market\n|}"];
+55 [shape=record,label="{Concept_softwares_55|exist_software2os(C_os_5)\n|}"];
+56 [shape=record,label="{Concept_softwares_56|exist_software2os(C_os_6)\n|}"];
+57 [shape=record,label="{Concept_softwares_57|exist_software2license(C_licenses_10)\n|}"];
+58 [shape=record,label="{Concept_softwares_58|exist_software2license(C_licenses_12)\nexist_software2os(C_os_7)\nexist_software2os(C_os_8)\nexist_software2os(C_os_9)\n|}"];
+	36 -> 48
+	38 -> 48
+	41 -> 48
+	33 -> 49
+	42 -> 49
+	27 -> 43
+	28 -> 43
+	32 -> 52
+	33 -> 52
+	29 -> 46
+	30 -> 46
+	35 -> 46
+	43 -> 46
+	29 -> 47
+	40 -> 47
+	34 -> 47
+	28 -> 54
+	30 -> 54
+	37 -> 54
+	32 -> 50
+	39 -> 50
+	28 -> 51
+	36 -> 51
+	37 -> 53
+	42 -> 53
+	27 -> 44
+	29 -> 44
+	30 -> 44
+	31 -> 44
+	35 -> 44
+	34 -> 44
+	31 -> 45
+	36 -> 45
+	37 -> 45
+	38 -> 45
+	39 -> 45
+	48 -> 55
+	49 -> 55
+	52 -> 55
+	46 -> 55
+	47 -> 55
+	54 -> 55
+	51 -> 55
+	53 -> 55
+	44 -> 55
+	40 -> 56
+	48 -> 56
+	49 -> 56
+	52 -> 56
+	46 -> 56
+	54 -> 56
+	50 -> 56
+	51 -> 56
+	53 -> 56
+	45 -> 56
+	27 -> 57
+	31 -> 57
+	35 -> 57
+	48 -> 57
+	49 -> 57
+	52 -> 57
+	47 -> 57
+	50 -> 57
+	55 -> 58
+	56 -> 58
+	57 -> 58
+}
+}

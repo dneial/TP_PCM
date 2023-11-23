@@ -57,10 +57,10 @@ def gen_licence_fc():
     df.replace("Apache License 2.0", "Apache License", inplace=True)
     df.replace("GNU Lesser General Public License", "GPL", inplace=True)
     df.replace("GNU General Public License v2", "GPL2", inplace=True)
+    df.replace("GNU General Public License v3", "GPL3", inplace=True)
     df.replace("GNU Affero General Public License", "AGPL", inplace=True)
     df.replace("Mozilla Public License 2.0", "MPL", inplace=True)
     df.replace("Common Public License", "CPAL", inplace=True)
-    df.replace("GNU General Public License v3", "GPL3", inplace=True)
 
     # rennommage des valeurs pour correspondre au format binaire demandé
     df.replace("Yes", 1, inplace=True)

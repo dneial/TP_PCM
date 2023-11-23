@@ -8,11 +8,14 @@ java -jar fca4j.jar family softwaresRCFT.rcft -a IMPORT Cleaned/software2license
 
 java -jar fca4j.jar family softwaresRCFT.rcft -a IMPORT Cleaned/software2os.csv -n software2os -x CSV -v -s COMMA -op exist -source softwares -target os
 
-mkdir results
-
-java -jar fca4j.jar RCA softwaresRCFT.rcft ./results -v -a ADD_EXTENT
-
+mkdir results_ae
+java -jar fca4j.jar RCA softwaresRCFT.rcft ./results_ae -v -a ADD_EXTENT
 dot -Tpdf results/step2.dot -o results/resultat.pdf
+
+mkdir results_hermes
+avec HERMES algo
+java -jar fca4j.jar RCA softwaresRCFT.rcft ./results_hermes -v -a HERMES
+dot -Tpdf results/step2.dot -o results/resultat_hermes.pdf
 
 mkdir rules/software2os
 
