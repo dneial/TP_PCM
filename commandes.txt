@@ -10,12 +10,11 @@ java -jar fca4j.jar family softwaresRCFT.rcft -a IMPORT Cleaned/software2os.csv 
 
 mkdir results_ae
 java -jar fca4j.jar RCA softwaresRCFT.rcft ./results_ae -v -a ADD_EXTENT
-dot -Tpdf results/step2.dot -o results/resultat.pdf
+dot -Tpdf results_ae/step2.dot -o results_ae/resultat.pdf
 
 mkdir results_hermes
-avec HERMES algo
-java -jar fca4j.jar RCA softwaresRCFT.rcft ./results_hermes -v -a HERMES
-dot -Tpdf results/step2.dot -o results/resultat_hermes.pdf
+java -jar fca4j.jar RCA softwaresRCFT.rcft ./results_hermes -v -a HERMES -e
+dot -Tpdf results_hermes/step2.dot -o results_hermes/resultat_hermes.pdf
 
 mkdir rules/software2os
 
