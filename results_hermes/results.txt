@@ -1,13 +1,13 @@
 os: step=1 nb.concepts=5 nb.attrib rel.=0
 licenses: step=1 nb.concepts=3 nb.attrib rel.=0
-softwares: step=1 nb.concepts=27 nb.attrib rel.=0
-time:20 ms
+softwares: step=1 nb.concepts=28 nb.attrib rel.=0
+time:10 ms
 os: step=2 nb.concepts=5 nb.attrib rel.=0
 licenses: step=2 nb.concepts=3 nb.attrib rel.=0
-softwares: step=2 nb.concepts=32 nb.attrib rel.=8
-time:10 ms
+softwares: step=2 nb.concepts=33 nb.attrib rel.=8
+time:4 ms
 os: step=3 nb.concepts=5 nb.attrib rel.=0
 licenses: step=3 nb.concepts=3 nb.attrib rel.=0
-softwares: step=3 nb.concepts=32 nb.attrib rel.=8
-time:6 ms
+softwares: step=3 nb.concepts=33 nb.attrib rel.=8
+time:3 ms
 total time: 58

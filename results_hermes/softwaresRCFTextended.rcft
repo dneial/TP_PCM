@@ -15,25 +15,25 @@ FormalContext licenses
 |MPL|x||x|x|x|x|x|
 
 FormalContext softwares
-||all markets|low to mid-market|mid to high end market|mid-market|personal|personal and small enterprise|small to mid-sized enterprises|Cloud Hostable|On Demand|Saas|Stand alone|Web Access|on-premise|Client-server|Multi-User|Stand alone|Thin client - Server or Stand alone|Web based|Web based + stand alone|Web based and Client-server|stand alone|GTK+|GlassFish|OSGi|Oracle|PostgreSQL|Qt|Scheme|C|C++|Delphi|Java|Java EE|Java on JBoss|Java on Tomcat|PHP|Perl|Python|exist_software2license(C_licenses_10)|exist_software2license(C_licenses_11)|exist_software2license(C_licenses_12)|exist_software2os(C_os_5)|exist_software2os(C_os_6)|exist_software2os(C_os_7)|exist_software2os(C_os_8)|exist_software2os(C_os_9)|
-|Adempiere||||x||||||||||||||x|||||x|||x||||||||x|||||x||x|x|x|x|x|x|
-|Apache OFBiz|||||||x|x||||x|||x|||||||||||||||||x|||||||x||x|x|x|x|x|x|
-|Compiere||||x||||||||||||||x|||||||||||||||x|||||||x|x|x|x|x|x|x|
-|FrontAccounting||x||||||||||||||||x||||||||||||||||||x|||x||x|x|x|x|x|x|
-|GnuCash||||||x||||||||||x||||||||||||x|x||||||||||x||x|x|x|x|x|x|
-|GNU Enterprise|||x||||||||||||||||x|||||||||||||||||||x|x||x|x|x|x|x|x|
-|HomeBank|||||x||||||||||||||||x|x|||||||x||||||||||x||x|x|x|x|x|x|
-|iDempiere||||x||||||||||||||||x||||x|x|x|||||||||x|||||x|x|x|x|x|x|x|
-|JFire|x||||||||||x|||||||x||||||||||||||x|||||||x||x|x||x|x|x|
-|KMyMoney|||||x||||||||||||||||x|||||||||x|||||||||x||x|x|x|x|x|x|
-|LedgerSMB||||x||||||||||||||x|||||||||||||||||||x||x||x|x|x|x|x|x|
-|Openbravo||||x|||||x|x|||x|||||x||||||||||||||x|||||||x||x|x|x|x|x|x|
-|Odoo||x||||||||||||||||||x||||||||||||||||||x|x||x|x|x|x|x|x|
-|Postbooks||x||||||||||||x|||||||||||||x|||x||||||||||x|x|x|x|x|x|x|
-|SQL-Ledger||||x||||||||||||||x|||||||||||||||||||x||x||x|x|x|x|x|x|
-|Tryton||x|||||||||||||||x|||||||||||||||||||||x|x||x|x|x|x|x|x|
-|TurboCASH||x||||||||||||||x|||||||||||||||x||||||||x||x||x|x|x|x|
-|webERP||x||||||||||||||||x||||||||||||||||||x|||x||x|x|x|x|x|x|
+||high end|low|mid|mid-sized enterprises|personal|personal-sized enterprises|small|small-sized enterprises|Client-server|Cloud Hostable|Multi-User|On Demand|Saas|Stand alone|Web Access|Web based|on-premise|GTK+|C|C++|Delphi|GlassFish|Java|Java EE|OSGi|Oracle|PHP|Perl|PostgreSQL|Python|Qt|Scheme|exist_software2license(C_licenses_10)|exist_software2license(C_licenses_11)|exist_software2license(C_licenses_12)|exist_software2os(C_os_5)|exist_software2os(C_os_6)|exist_software2os(C_os_7)|exist_software2os(C_os_8)|exist_software2os(C_os_9)|
+|Adempiere|||x|||||||||||||x||||||x|x||||||x||||x||x|x|x|x|x|x|
+|Apache OFBiz||||x||||x||x|x||||x||||||||x||||||||||x||x|x|x|x|x|x|
+|Compiere|||x|||||||||||||x||||||||x||||||||||x|x|x|x|x|x|x|
+|FrontAccounting||x|x|||||||||||||x|||||||||||x||||||x||x|x|x|x|x|x|
+|GnuCash||||||x||x||||||x|||||x|||||||||||||x|x||x|x|x|x|x|x|
+|GNU Enterprise|x||x|||||||||||x||x||||||||||||||x|||x||x|x|x|x|x|x|
+|HomeBank|||||x|||||||||x||||x|x||||||||||||||x||x|x|x|x|x|x|
+|iDempiere|||x||||||x|||||||x|||||||x||x|x|||x|||||x|x|x|x|x|x|x|
+|JFire|||x||||x|||||||x||x|||||||x||||||||||x||x|x||x|x|x|
+|KMyMoney||||||x||||||||x||||||x|||||||||||||x||x|x|x|x|x|x|
+|LedgerSMB|||x|||||||||||||x||||||||||||x|||||x||x|x|x|x|x|x|
+|Openbravo|||x|||||||||x|x|||x|x||||||x||||||||||x||x|x|x|x|x|x|
+|Odoo||x|x||||||x|||||||x||||||||||||||x|||x||x|x|x|x|x|x|
+|Postbooks||x|x||||||x|||||||||||x|||||||||||x|||x|x|x|x|x|x|x|
+|SQL-Ledger|||x|||||||||||||x||||||||||||x|||||x||x|x|x|x|x|x|
+|Tryton||x|x||||||x|||||x||||||||||||||||x|||x||x|x|x|x|x|x|
+|TurboCASH||x|x|||||||||||x|||||||x||||||||||||x||x||x|x|x|x|
+|webERP||x|x|||||||||||||x|||||||||||x||||||x||x|x|x|x|x|x|
 
 RelationalContext software2license
 source softwares

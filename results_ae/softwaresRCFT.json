@@ -214,12 +214,13 @@
 }
 },
 "children": [
-69,
-74,
-80
+44,
+88,
+100,
+113
 ],
 "context": "softwares",
-"id": 32,
+"id": 40,
 "objects": [],
 "parents": []
 },
@@ -235,15 +236,16 @@
 }
 },
 "children": [
-48,
-77,
-79
+71,
+107,
+111,
+112
 ],
 "context": "softwares",
-"id": 80,
+"id": 113,
 "objects": [],
 "parents": [
-32
+40
 ]
 },
 {
@@ -258,15 +260,31 @@
 }
 },
 "children": [
-35,
-73,
-79
+95,
+99,
+112
 ],
 "context": "softwares",
-"id": 74,
+"id": 100,
 "objects": [],
 "parents": [
-32
+40
+]
+},
+{
+"attributes": {
+"mid": "mid"
+},
+"children": [
+86,
+95,
+107
+],
+"context": "softwares",
+"id": 44,
+"objects": [],
+"parents": [
+40
 ]
 },
 {
@@ -281,63 +299,190 @@
 }
 },
 "children": [
-73,
-77
-],
-"context": "softwares",
-"id": 69,
-"objects": [],
-"parents": [
-32
-]
-},
-{
-"attributes": {},
-"children": [
-37,
-51,
 57,
-65,
-71,
-76,
-78
+86,
+99,
+111
 ],
 "context": "softwares",
-"id": 79,
+"id": 88,
 "objects": [],
 "parents": [
-74,
-80
+40
 ]
 },
 {
 "attributes": {},
 "children": [
-59,
-68,
-76
-],
-"context": "softwares",
-"id": 77,
-"objects": [],
-"parents": [
-69,
-80
-]
-},
-{
-"attributes": {},
-"children": [
-44,
 66,
-76
+97,
+106,
+110
 ],
 "context": "softwares",
-"id": 73,
+"id": 112,
 "objects": [],
 "parents": [
-69,
-74
+100,
+113
+]
+},
+{
+"attributes": {},
+"children": [
+62,
+104,
+106
+],
+"context": "softwares",
+"id": 107,
+"objects": [],
+"parents": [
+44,
+113
+]
+},
+{
+"attributes": {},
+"children": [
+43,
+94,
+106
+],
+"context": "softwares",
+"id": 95,
+"objects": [],
+"parents": [
+44,
+100
+]
+},
+{
+"attributes": {},
+"children": [
+87,
+104,
+109,
+110
+],
+"context": "softwares",
+"id": 111,
+"objects": [],
+"parents": [
+88,
+113
+]
+},
+{
+"attributes": {},
+"children": [
+94,
+98,
+110
+],
+"context": "softwares",
+"id": 99,
+"objects": [],
+"parents": [
+88,
+100
+]
+},
+{
+"attributes": {},
+"children": [
+56,
+94,
+104
+],
+"context": "softwares",
+"id": 86,
+"objects": [],
+"parents": [
+44,
+88
+]
+},
+{
+"attributes": {},
+"children": [
+52,
+82,
+92,
+103,
+105
+],
+"context": "softwares",
+"id": 106,
+"objects": [],
+"parents": [
+95,
+107,
+112
+]
+},
+{
+"attributes": {
+"low": "low"
+},
+"children": [
+83,
+105
+],
+"context": "softwares",
+"id": 43,
+"objects": [],
+"parents": [
+95
+]
+},
+{
+"attributes": {},
+"children": [
+50,
+96,
+103,
+108
+],
+"context": "softwares",
+"id": 110,
+"objects": [],
+"parents": [
+99,
+111,
+112
+]
+},
+{
+"attributes": {},
+"children": [
+85,
+101,
+103
+],
+"context": "softwares",
+"id": 104,
+"objects": [],
+"parents": [
+86,
+107,
+111
+]
+},
+{
+"attributes": {},
+"children": [
+83,
+93,
+103
+],
+"context": "softwares",
+"id": 94,
+"objects": [],
+"parents": [
+86,
+95,
+99
 ]
 },
 {
@@ -345,149 +490,255 @@
 "Web based": "Web based"
 },
 "children": [
-68,
-71
+70,
+85,
+92
 ],
 "context": "softwares",
-"id": 48,
+"id": 62,
 "objects": [],
 "parents": [
-80
+107
 ]
 },
 {
 "attributes": {
-"low to mid-market": "low to mid-market"
+"Java": "Java"
 },
 "children": [
-66,
-78
-],
-"context": "softwares",
-"id": 35,
-"objects": [],
-"parents": [
-74
-]
-},
-{
-"attributes": {},
-"children": [
-38,
-55,
-63,
 70,
-72,
-75
-],
-"context": "softwares",
-"id": 76,
-"objects": [],
-"parents": [
-73,
-77,
-79
-]
-},
-{
-"attributes": {},
-"children": [
-47,
-70
+87,
+97
 ],
 "context": "softwares",
 "id": 71,
 "objects": [],
 "parents": [
-48,
-79
-]
-},
-{
-"attributes": {},
-"children": [
-58,
-70
-],
-"context": "softwares",
-"id": 68,
-"objects": [],
-"parents": [
-48,
-77
+113
 ]
 },
 {
 "attributes": {
-"mid-market": "mid-market"
+"Stand alone": "Stand alone"
 },
 "children": [
-47,
-54,
-64
+56,
+98,
+109
 ],
 "context": "softwares",
-"id": 37,
+"id": 57,
 "objects": [],
 "parents": [
-79
+88
 ]
 },
 {
 "attributes": {},
 "children": [
-42,
-75
+51,
+102
 ],
 "context": "softwares",
-"id": 78,
+"id": 105,
 "objects": [],
 "parents": [
-35,
-79
-]
-},
-{
-"attributes": {},
-"children": [
 43,
-75
-],
-"context": "softwares",
-"id": 66,
-"objects": [],
-"parents": [
-35,
-73
+106
 ]
 },
 {
 "attributes": {},
 "children": [
-46,
-67
+79,
+91,
+102
 ],
 "context": "softwares",
-"id": 70,
+"id": 103,
 "objects": [],
 "parents": [
-68,
-71,
-76
+94,
+104,
+106,
+110
+]
+},
+{
+"attributes": {},
+"children": [
+55,
+102
+],
+"context": "softwares",
+"id": 83,
+"objects": [],
+"parents": [
+43,
+94
 ]
 },
 {
 "attributes": {},
 "children": [
 60,
-67
+81,
+90,
+91
 ],
 "context": "softwares",
-"id": 47,
+"id": 92,
 "objects": [],
 "parents": [
-37,
+62,
+106
+]
+},
+{
+"attributes": {},
+"children": [
+61,
+84,
+91
+],
+"context": "softwares",
+"id": 85,
+"objects": [],
+"parents": [
+62,
+104
+]
+},
+{
+"attributes": {},
+"children": [
+90,
+96
+],
+"context": "softwares",
+"id": 97,
+"objects": [],
+"parents": [
+71,
+112
+]
+},
+{
+"attributes": {},
+"children": [
+84,
+90
+],
+"context": "softwares",
+"id": 70,
+"objects": [],
+"parents": [
+62,
 71
+]
+},
+{
+"attributes": {},
+"children": [
+84,
+96
+],
+"context": "softwares",
+"id": 87,
+"objects": [],
+"parents": [
+71,
+111
+]
+},
+{
+"attributes": {},
+"children": [
+93,
+108
+],
+"context": "softwares",
+"id": 98,
+"objects": [],
+"parents": [
+57,
+99
+]
+},
+{
+"attributes": {},
+"children": [
+93,
+101
+],
+"context": "softwares",
+"id": 56,
+"objects": [],
+"parents": [
+57,
+86
+]
+},
+{
+"attributes": {},
+"children": [
+101,
+108
+],
+"context": "softwares",
+"id": 109,
+"objects": [],
+"parents": [
+57,
+111
+]
+},
+{
+"attributes": {
+"Client-server": "Client-server"
+},
+"children": [
+51,
+60,
+80
+],
+"context": "softwares",
+"id": 52,
+"objects": [],
+"parents": [
+106
+]
+},
+{
+"attributes": {},
+"children": [
+59,
+76
+],
+"context": "softwares",
+"id": 102,
+"objects": [],
+"parents": [
+83,
+103,
+105
+]
+},
+{
+"attributes": {},
+"children": [
+59,
+74,
+78,
+89
+],
+"context": "softwares",
+"id": 91,
+"objects": [],
+"parents": [
+85,
+92,
+103
 ]
 },
 {
@@ -502,29 +753,90 @@
 }
 },
 "children": [
-42,
-64
+80,
+81
 ],
 "context": "softwares",
-"id": 65,
+"id": 82,
 "objects": [],
 "parents": [
-79
+106
 ]
 },
 {
 "attributes": {},
 "children": [
-46,
-62
+75,
+89
 ],
 "context": "softwares",
-"id": 75,
+"id": 90,
 "objects": [],
 "parents": [
-66,
-76,
-78
+70,
+92,
+97
+]
+},
+{
+"attributes": {},
+"children": [
+45,
+89
+],
+"context": "softwares",
+"id": 96,
+"objects": [],
+"parents": [
+87,
+97,
+110
+]
+},
+{
+"attributes": {},
+"children": [
+48,
+89
+],
+"context": "softwares",
+"id": 84,
+"objects": [],
+"parents": [
+70,
+85,
+87
+]
+},
+{
+"attributes": {},
+"children": [
+55,
+77
+],
+"context": "softwares",
+"id": 93,
+"objects": [],
+"parents": [
+56,
+94,
+98
+]
+},
+{
+"attributes": {},
+"children": [
+47,
+63,
+77
+],
+"context": "softwares",
+"id": 108,
+"objects": [],
+"parents": [
+98,
+109,
+110
 ]
 },
 {
@@ -532,89 +844,86 @@
 "Python": "Python"
 },
 "children": [
-36,
-62
+76,
+77,
+78
 ],
 "context": "softwares",
-"id": 63,
+"id": 79,
 "objects": [],
 "parents": [
-76
+103
 ]
 },
 {
-"attributes": {
-"Java": "Java"
+"attributes": {},
+"children": [
+64,
+76
+],
+"context": "softwares",
+"id": 51,
+"objects": [],
+"parents": [
+52,
+105
+]
 },
+{
+"attributes": {},
+"children": [
+61,
+77
+],
+"context": "softwares",
+"id": 101,
+"objects": [],
+"parents": [
+56,
+104,
+109
+]
+},
+{
+"attributes": {},
 "children": [
 58,
-72
+73
 ],
 "context": "softwares",
 "id": 59,
 "objects": [],
 "parents": [
-77
+91,
+102
 ]
 },
 {
 "attributes": {},
 "children": [
-41,
-53,
-61
+69,
+72
 ],
 "context": "softwares",
-"id": 67,
+"id": 81,
 "objects": [],
 "parents": [
-47,
-70
+82,
+92
 ]
 },
 {
 "attributes": {},
 "children": [
-50,
-60
+64,
+69
 ],
 "context": "softwares",
-"id": 64,
+"id": 80,
 "objects": [],
 "parents": [
-37,
-65
-]
-},
-{
-"attributes": {
-"C++": "C++"
-},
-"children": [
-42,
-56
-],
-"context": "softwares",
-"id": 57,
-"objects": [],
-"parents": [
-79
-]
-},
-{
-"attributes": {
-"personal": "personal",
-"stand alone": "stand alone"
-},
-"children": [
 52,
-56
-],
-"context": "softwares",
-"id": 38,
-"objects": [],
-"parents": [
-76
+82
 ]
 },
 {
@@ -622,14 +931,133 @@
 "PostgreSQL": "PostgreSQL"
 },
 "children": [
-50,
-53
+68,
+69
 ],
 "context": "softwares",
-"id": 54,
+"id": 75,
 "objects": [],
 "parents": [
-37
+90
+]
+},
+{
+"attributes": {},
+"children": [
+58,
+69
+],
+"context": "softwares",
+"id": 60,
+"objects": [],
+"parents": [
+52,
+92
+]
+},
+{
+"attributes": {},
+"children": [
+53,
+68
+],
+"context": "softwares",
+"id": 89,
+"objects": [],
+"parents": [
+84,
+90,
+91,
+96
+]
+},
+{
+"attributes": {},
+"children": [
+54,
+67
+],
+"context": "softwares",
+"id": 55,
+"objects": [],
+"parents": [
+83,
+93
+]
+},
+{
+"attributes": {
+"C++": "C++"
+},
+"children": [
+64,
+65
+],
+"context": "softwares",
+"id": 66,
+"objects": [],
+"parents": [
+112
+]
+},
+{
+"attributes": {
+"personal-sized enterprises": "personal-sized enterprises"
+},
+"children": [
+49,
+65
+],
+"context": "softwares",
+"id": 47,
+"objects": [],
+"parents": [
+108
+]
+},
+{
+"attributes": {},
+"children": [
+41,
+58
+],
+"context": "softwares",
+"id": 78,
+"objects": [],
+"parents": [
+79,
+91
+]
+},
+{
+"attributes": {},
+"children": [
+54,
+58
+],
+"context": "softwares",
+"id": 76,
+"objects": [],
+"parents": [
+51,
+79,
+102
+]
+},
+{
+"attributes": {},
+"children": [
+41,
+54
+],
+"context": "softwares",
+"id": 77,
+"objects": [],
+"parents": [
+79,
+93,
+101,
+108
 ]
 },
 {
@@ -637,86 +1065,43 @@
 "C": "C"
 },
 "children": [
-39,
-52
+46,
+49
 ],
 "context": "softwares",
-"id": 55,
+"id": 63,
 "objects": [],
 "parents": [
-76
+108
 ]
 },
 {
 "attributes": {
-"Web based and Client-server": "Web based and Client-server"
+"small-sized enterprises": "small-sized enterprises"
 },
-"children": [
-49,
-50
-],
-"context": "softwares",
-"id": 51,
-"objects": [],
-"parents": [
-79
-]
-},
-{
-"attributes": {},
 "children": [
 45,
 49
 ],
 "context": "softwares",
-"id": 62,
+"id": 50,
 "objects": [],
 "parents": [
-63,
-75
-]
-},
-{
-"attributes": {
-"Stand alone": "Stand alone"
-},
-"children": [
-39,
-43
-],
-"context": "softwares",
-"id": 44,
-"objects": [],
-"parents": [
-73
+110
 ]
 },
 {
 "attributes": {},
 "children": [
-40,
-41
+41,
+48
 ],
 "context": "softwares",
-"id": 72,
+"id": 61,
 "objects": [],
 "parents": [
-59,
-76
-]
-},
-{
-"attributes": {},
-"children": [
-33,
-41
-],
-"context": "softwares",
-"id": 58,
-"objects": [],
-"parents": [
-59,
-68
+85,
+101
 ]
 },
 {
@@ -724,118 +1109,16 @@
 "Perl": "Perl"
 },
 "children": [
-34
+42
 ],
 "context": "softwares",
-"id": 61,
+"id": 74,
 "objects": [
 "LedgerSMB",
 "SQL-Ledger"
 ],
 "parents": [
-67
-]
-},
-{
-"attributes": {
-"Java EE": "Java EE"
-},
-"children": [
-34
-],
-"context": "softwares",
-"id": 60,
-"objects": [
-"Compiere"
-],
-"parents": [
-47,
-64
-]
-},
-{
-"attributes": {},
-"children": [
-34
-],
-"context": "softwares",
-"id": 56,
-"objects": [
-"KMyMoney"
-],
-"parents": [
-38,
-57
-]
-},
-{
-"attributes": {
-"GlassFish": "GlassFish",
-"Java on JBoss": "Java on JBoss"
-},
-"children": [
-34
-],
-"context": "softwares",
-"id": 53,
-"objects": [
-"Adempiere"
-],
-"parents": [
-54,
-67
-]
-},
-{
-"attributes": {
-"GTK+": "GTK+"
-},
-"children": [
-34
-],
-"context": "softwares",
-"id": 52,
-"objects": [
-"HomeBank"
-],
-"parents": [
-38,
-55
-]
-},
-{
-"attributes": {
-"Java on Tomcat": "Java on Tomcat",
-"OSGi": "OSGi",
-"Oracle": "Oracle"
-},
-"children": [
-34
-],
-"context": "softwares",
-"id": 50,
-"objects": [
-"iDempiere"
-],
-"parents": [
-51,
-54,
-64
-]
-},
-{
-"attributes": {},
-"children": [
-34
-],
-"context": "softwares",
-"id": 49,
-"objects": [
-"Odoo"
-],
-"parents": [
-51,
-62
+91
 ]
 },
 {
@@ -843,33 +1126,69 @@
 "PHP": "PHP"
 },
 "children": [
-34
+42
 ],
 "context": "softwares",
-"id": 46,
+"id": 73,
 "objects": [
 "FrontAccounting",
 "webERP"
 ],
 "parents": [
-70,
-75
+59
 ]
 },
 {
 "attributes": {
-"Thin client - Server or Stand alone": "Thin client - Server or Stand alone"
+"Java EE": "Java EE"
 },
 "children": [
-34
+42
 ],
 "context": "softwares",
-"id": 45,
+"id": 72,
 "objects": [
-"Tryton"
+"Compiere"
 ],
 "parents": [
-62
+81
+]
+},
+{
+"attributes": {
+"OSGi": "OSGi",
+"Oracle": "Oracle"
+},
+"children": [
+42
+],
+"context": "softwares",
+"id": 69,
+"objects": [
+"iDempiere"
+],
+"parents": [
+60,
+75,
+80,
+81
+]
+},
+{
+"attributes": {
+"GlassFish": "GlassFish"
+},
+"children": [
+42
+],
+"context": "softwares",
+"id": 68,
+"objects": [
+"Adempiere"
+],
+"parents": [
+75,
+89
 ]
 },
 {
@@ -877,35 +1196,81 @@
 "Delphi": "Delphi"
 },
 "children": [
-34
+42
 ],
 "context": "softwares",
-"id": 43,
+"id": 67,
 "objects": [
 "TurboCASH"
 ],
 "parents": [
-44,
+55
+]
+},
+{
+"attributes": {},
+"children": [
+42
+],
+"context": "softwares",
+"id": 65,
+"objects": [
+"KMyMoney"
+],
+"parents": [
+47,
 66
 ]
 },
 {
 "attributes": {
-"Client-server": "Client-server",
 "Qt": "Qt"
 },
 "children": [
-34
+42
 ],
 "context": "softwares",
-"id": 42,
+"id": 64,
 "objects": [
 "Postbooks"
 ],
 "parents": [
-57,
-65,
+51,
+66,
+80
+]
+},
+{
+"attributes": {},
+"children": [
+42
+],
+"context": "softwares",
+"id": 58,
+"objects": [
+"Odoo"
+],
+"parents": [
+59,
+60,
+76,
 78
+]
+},
+{
+"attributes": {},
+"children": [
+42
+],
+"context": "softwares",
+"id": 54,
+"objects": [
+"Tryton"
+],
+"parents": [
+55,
+76,
+77
 ]
 },
 {
@@ -915,68 +1280,64 @@
 "on-premise": "on-premise"
 },
 "children": [
-34
+42
 ],
 "context": "softwares",
-"id": 41,
+"id": 53,
 "objects": [
 "Openbravo"
 ],
 "parents": [
-58,
-67,
-72
+89
 ]
 },
 {
 "attributes": {
-"Cloud Hostable": "Cloud Hostable",
-"Multi-User": "Multi-User",
-"Web Access": "Web Access",
-"small to mid-sized enterprises": "small to mid-sized enterprises"
+"Scheme": "Scheme"
 },
 "children": [
-34
+42
 ],
 "context": "softwares",
-"id": 40,
-"objects": [
-"Apache OFBiz"
-],
-"parents": [
-72
-]
-},
-{
-"attributes": {
-"Scheme": "Scheme",
-"personal and small enterprise": "personal and small enterprise"
-},
-"children": [
-34
-],
-"context": "softwares",
-"id": 39,
+"id": 49,
 "objects": [
 "GnuCash"
 ],
 "parents": [
-44,
-55
+47,
+50,
+63
 ]
 },
 {
 "attributes": {
-"Web based + stand alone": "Web based + stand alone",
-"mid to high end market": "mid to high end market"
+"small": "small"
 },
 "children": [
-34
+42
 ],
 "context": "softwares",
-"id": 36,
+"id": 48,
 "objects": [
-"GNU Enterprise"
+"JFire"
+],
+"parents": [
+61,
+84
+]
+},
+{
+"attributes": {
+"GTK+": "GTK+",
+"personal": "personal"
+},
+"children": [
+42
+],
+"context": "softwares",
+"id": 46,
+"objects": [
+"HomeBank"
 ],
 "parents": [
 63
@@ -984,19 +1345,40 @@
 },
 {
 "attributes": {
-"Stand alone": "Stand alone",
-"all markets": "all markets"
+"Cloud Hostable": "Cloud Hostable",
+"Multi-User": "Multi-User",
+"Web Access": "Web Access",
+"mid-sized enterprises": "mid-sized enterprises"
 },
 "children": [
-34
+42
 ],
 "context": "softwares",
-"id": 33,
+"id": 45,
 "objects": [
-"JFire"
+"Apache OFBiz"
 ],
 "parents": [
-58
+50,
+96
+]
+},
+{
+"attributes": {
+"high end": "high end"
+},
+"children": [
+42
+],
+"context": "softwares",
+"id": 41,
+"objects": [
+"GNU Enterprise"
+],
+"parents": [
+61,
+77,
+78
 ]
 },
 {
@@ -1020,25 +1402,25 @@
 },
 "children": [],
 "context": "softwares",
-"id": 34,
+"id": 42,
 "objects": [],
 "parents": [
-33,
-36,
-39,
-40,
 41,
-42,
-43,
 45,
 46,
+48,
 49,
-50,
-52,
 53,
-56,
-60,
-61
+54,
+58,
+64,
+65,
+67,
+68,
+69,
+72,
+73,
+74
 ]
 }
 ]
