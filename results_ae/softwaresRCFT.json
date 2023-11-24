@@ -1,154 +1,156 @@
 [
 {
-"attributes": {},
+"attributes": {
+"fs": "UDF"
+},
 "children": [
-10,
-13
+11,
+13,
+15
 ],
 "context": "os",
-"id": 7,
+"id": 8,
 "objects": [],
 "parents": []
 },
 {
 "attributes": {
-"ARM": "ARM",
-"ReiserFS": "ReiserFS",
-"ext3": "ext3",
-"x86": "x86",
-"x86-64": "x86-64"
+"arch": "x86",
+"fs": "ext3"
 },
 "children": [
-8,
+9,
+14
+],
+"context": "os",
+"id": 15,
+"objects": [],
+"parents": [
+8
+]
+},
+{
+"attributes": {
+"Kernel type": "Monolithic with modules",
+"arch": " PowerPC",
+"fs": "ISO 9660"
+},
+"children": [
+12,
+14
+],
+"context": "os",
+"id": 11,
+"objects": [],
+"parents": [
+8
+]
+},
+{
+"attributes": {
+"fs": "HFS+"
+},
+"children": [
+9,
 12
 ],
 "context": "os",
 "id": 13,
 "objects": [],
 "parents": [
-7
+8
 ]
 },
 {
 "attributes": {
-"ISO 9660": "ISO 9660",
-"Kernel type": "Monolithic with modules",
-"PowerPC": "PowerPC",
-"UDF": "UDF"
+"arch": " others",
+"fs": "others"
 },
 "children": [
-11,
-12
+10
 ],
 "context": "os",
-"id": 10,
-"objects": [],
-"parents": [
-7
-]
-},
-{
-"attributes": {
-"FAT": "FAT",
-"NFS": "NFS",
-"SPARC": "SPARC",
-"and others": "and others",
-"btrfs": "btrfs",
-"ext2": "ext2",
-"ext4": "ext4",
-"others": "others"
-},
-"children": [
-9
-],
-"context": "os",
-"id": 12,
+"id": 14,
 "objects": [
 "Linux"
 ],
 "parents": [
-10,
-13
+11,
+15
 ]
 },
 {
 "attributes": {
-"68k": "68k",
-"AFP": "AFP",
-"FAT(System 7 and later)": "FAT(System 7 and later)",
-"HFS": "HFS",
-"HFS+": "HFS+",
-"MFS (Mac OS 8.0 and before)": "MFS (Mac OS 8.0 and before)"
+"arch": "68k",
+"fs": "MFS"
 },
 "children": [
-9
+10
 ],
 "context": "os",
-"id": 11,
+"id": 12,
 "objects": [
 "Mac OS"
 ],
 "parents": [
-10
+11,
+13
 ]
 },
 {
 "attributes": {
-"FAT exFAT ISO 9660": "FAT exFAT ISO 9660",
-"FATX": "FATX",
-"HFS+": "HFS+",
 "Kernel type": "Hybrid",
-"NTFS": "NTFS",
-"UDF; 3rd-party drivers support ext2": "UDF; 3rd-party drivers support ext2",
-"and HFS (with third party driver)": "and HFS (with third party driver)"
+"fs": "NTFS"
 },
 "children": [
-9
+10
 ],
 "context": "os",
-"id": 8,
+"id": 9,
 "objects": [
 "Windows"
 ],
 "parents": [
-13
+13,
+15
 ]
 },
 {
 "attributes": {},
 "children": [],
 "context": "os",
-"id": 9,
+"id": 10,
 "objects": [],
 "parents": [
-8,
-11,
-12
+9,
+12,
+14
 ]
 },
 {
 "attributes": {
-"Copyfree approval": "No",
-"Debian approval": "Yes",
-"FSF approval": "Yes",
-"Fedora approval": "Yes",
-"OSI approval": "Yes"
+"Debian approval": "Debian approval",
+"FSF approval": "FSF approval",
+"Fedora approval": "Fedora approval",
+"OSI approval": "OSI approval"
 },
 "children": [
-15,
 17
 ],
 "context": "licenses",
-"id": 14,
-"objects": [],
+"id": 16,
+"objects": [
+"CPAL",
+"GPL2"
+],
 "parents": []
 },
 {
 "attributes": {
-"GPL (v3) compatibility": "Yes"
+"GPL (v3) compatibility": "GPL (v3) compatibility"
 },
 "children": [
-16
+18
 ],
 "context": "licenses",
 "id": 17,
@@ -160,34 +162,18 @@
 "MPL"
 ],
 "parents": [
-14
+16
 ]
 },
 {
 "attributes": {
-"GPL (v3) compatibility": "No"
+"Copyfree approval": "Copyfree approval"
 },
-"children": [
-16
-],
-"context": "licenses",
-"id": 15,
-"objects": [
-"CPAL",
-"GPL2"
-],
-"parents": [
-14
-]
-},
-{
-"attributes": {},
 "children": [],
 "context": "licenses",
-"id": 16,
+"id": 18,
 "objects": [],
 "parents": [
-15,
 17
 ]
 },
@@ -195,7 +181,7 @@
 "attributes": {
 "exist_software2license": {
 "concepts": [
-14
+16
 ],
 "operator": "exist",
 "relation": "software2license",
@@ -203,10 +189,11 @@
 },
 "exist_software2os": {
 "concepts": [
-7,
 8,
-10,
-13
+9,
+11,
+13,
+15
 ],
 "operator": "exist",
 "relation": "software2os",
@@ -215,14 +202,38 @@
 },
 "children": [
 44,
-88,
-100,
-113
+85,
+97,
+110
 ],
 "context": "softwares",
 "id": 40,
 "objects": [],
 "parents": []
+},
+{
+"attributes": {
+"exist_software2os": {
+"concepts": [
+14
+],
+"operator": "exist",
+"relation": "software2os",
+"target": "os"
+}
+},
+"children": [
+71,
+104,
+108,
+109
+],
+"context": "softwares",
+"id": 110,
+"objects": [],
+"parents": [
+40
+]
 },
 {
 "attributes": {
@@ -236,36 +247,12 @@
 }
 },
 "children": [
-71,
-107,
-111,
-112
+92,
+96,
+109
 ],
 "context": "softwares",
-"id": 113,
-"objects": [],
-"parents": [
-40
-]
-},
-{
-"attributes": {
-"exist_software2os": {
-"concepts": [
-11
-],
-"operator": "exist",
-"relation": "software2os",
-"target": "os"
-}
-},
-"children": [
-95,
-99,
-112
-],
-"context": "softwares",
-"id": 100,
+"id": 97,
 "objects": [],
 "parents": [
 40
@@ -276,9 +263,9 @@
 "mid": "mid"
 },
 "children": [
-86,
-95,
-107
+83,
+92,
+104
 ],
 "context": "softwares",
 "id": 44,
@@ -300,12 +287,12 @@
 },
 "children": [
 57,
-86,
-99,
-111
+83,
+96,
+108
 ],
 "context": "softwares",
-"id": 88,
+"id": 85,
 "objects": [],
 "parents": [
 40
@@ -315,148 +302,22 @@
 "attributes": {},
 "children": [
 66,
-97,
-106,
-110
+94,
+103,
+107
 ],
 "context": "softwares",
-"id": 112,
+"id": 109,
 "objects": [],
 "parents": [
-100,
-113
+97,
+110
 ]
 },
 {
 "attributes": {},
 "children": [
 62,
-104,
-106
-],
-"context": "softwares",
-"id": 107,
-"objects": [],
-"parents": [
-44,
-113
-]
-},
-{
-"attributes": {},
-"children": [
-43,
-94,
-106
-],
-"context": "softwares",
-"id": 95,
-"objects": [],
-"parents": [
-44,
-100
-]
-},
-{
-"attributes": {},
-"children": [
-87,
-104,
-109,
-110
-],
-"context": "softwares",
-"id": 111,
-"objects": [],
-"parents": [
-88,
-113
-]
-},
-{
-"attributes": {},
-"children": [
-94,
-98,
-110
-],
-"context": "softwares",
-"id": 99,
-"objects": [],
-"parents": [
-88,
-100
-]
-},
-{
-"attributes": {},
-"children": [
-56,
-94,
-104
-],
-"context": "softwares",
-"id": 86,
-"objects": [],
-"parents": [
-44,
-88
-]
-},
-{
-"attributes": {},
-"children": [
-52,
-82,
-92,
-103,
-105
-],
-"context": "softwares",
-"id": 106,
-"objects": [],
-"parents": [
-95,
-107,
-112
-]
-},
-{
-"attributes": {
-"low": "low"
-},
-"children": [
-83,
-105
-],
-"context": "softwares",
-"id": 43,
-"objects": [],
-"parents": [
-95
-]
-},
-{
-"attributes": {},
-"children": [
-50,
-96,
-103,
-108
-],
-"context": "softwares",
-"id": 110,
-"objects": [],
-"parents": [
-99,
-111,
-112
-]
-},
-{
-"attributes": {},
-"children": [
-85,
 101,
 103
 ],
@@ -464,25 +325,150 @@
 "id": 104,
 "objects": [],
 "parents": [
-86,
-107,
-111
+44,
+110
 ]
 },
 {
 "attributes": {},
 "children": [
-83,
-93,
+43,
+91,
 103
 ],
 "context": "softwares",
-"id": 94,
+"id": 92,
 "objects": [],
 "parents": [
-86,
+44,
+97
+]
+},
+{
+"attributes": {},
+"children": [
+84,
+101,
+106,
+107
+],
+"context": "softwares",
+"id": 108,
+"objects": [],
+"parents": [
+85,
+110
+]
+},
+{
+"attributes": {},
+"children": [
+91,
 95,
-99
+107
+],
+"context": "softwares",
+"id": 96,
+"objects": [],
+"parents": [
+85,
+97
+]
+},
+{
+"attributes": {},
+"children": [
+56,
+91,
+101
+],
+"context": "softwares",
+"id": 83,
+"objects": [],
+"parents": [
+44,
+85
+]
+},
+{
+"attributes": {},
+"children": [
+52,
+89,
+100,
+102
+],
+"context": "softwares",
+"id": 103,
+"objects": [],
+"parents": [
+92,
+104,
+109
+]
+},
+{
+"attributes": {
+"low": "low"
+},
+"children": [
+80,
+102
+],
+"context": "softwares",
+"id": 43,
+"objects": [],
+"parents": [
+92
+]
+},
+{
+"attributes": {},
+"children": [
+50,
+93,
+100,
+105
+],
+"context": "softwares",
+"id": 107,
+"objects": [],
+"parents": [
+96,
+108,
+109
+]
+},
+{
+"attributes": {},
+"children": [
+82,
+98,
+100
+],
+"context": "softwares",
+"id": 101,
+"objects": [],
+"parents": [
+83,
+104,
+108
+]
+},
+{
+"attributes": {},
+"children": [
+80,
+90,
+100
+],
+"context": "softwares",
+"id": 91,
+"objects": [],
+"parents": [
+83,
+92,
+96
 ]
 },
 {
@@ -491,14 +477,14 @@
 },
 "children": [
 70,
-85,
-92
+82,
+89
 ],
 "context": "softwares",
 "id": 62,
 "objects": [],
 "parents": [
-107
+104
 ]
 },
 {
@@ -507,14 +493,14 @@
 },
 "children": [
 70,
-87,
-97
+84,
+94
 ],
 "context": "softwares",
 "id": 71,
 "objects": [],
 "parents": [
-113
+110
 ]
 },
 {
@@ -523,111 +509,111 @@
 },
 "children": [
 56,
-98,
-109
+95,
+106
 ],
 "context": "softwares",
 "id": 57,
 "objects": [],
 "parents": [
-88
+85
 ]
 },
 {
 "attributes": {},
 "children": [
 51,
-102
+99
 ],
 "context": "softwares",
-"id": 105,
+"id": 102,
 "objects": [],
 "parents": [
 43,
-106
+103
 ]
 },
 {
 "attributes": {},
 "children": [
 79,
-91,
-102
+88,
+99
 ],
 "context": "softwares",
-"id": 103,
+"id": 100,
 "objects": [],
 "parents": [
-94,
-104,
-106,
-110
+91,
+101,
+103,
+107
 ]
 },
 {
 "attributes": {},
 "children": [
 55,
-102
+99
 ],
 "context": "softwares",
-"id": 83,
+"id": 80,
 "objects": [],
 "parents": [
 43,
-94
+91
 ]
 },
 {
 "attributes": {},
 "children": [
 60,
-81,
-90,
-91
+72,
+87,
+88
 ],
 "context": "softwares",
-"id": 92,
+"id": 89,
 "objects": [],
 "parents": [
 62,
-106
+103
 ]
 },
 {
 "attributes": {},
 "children": [
 61,
-84,
-91
+81,
+88
 ],
 "context": "softwares",
-"id": 85,
+"id": 82,
 "objects": [],
 "parents": [
 62,
-104
+101
 ]
 },
 {
 "attributes": {},
 "children": [
-90,
-96
+87,
+93
 ],
 "context": "softwares",
-"id": 97,
+"id": 94,
 "objects": [],
 "parents": [
 71,
-112
+109
 ]
 },
 {
 "attributes": {},
 "children": [
-84,
-90
+81,
+87
 ],
 "context": "softwares",
 "id": 70,
@@ -640,57 +626,57 @@
 {
 "attributes": {},
 "children": [
-84,
-96
+81,
+93
 ],
 "context": "softwares",
-"id": 87,
+"id": 84,
 "objects": [],
 "parents": [
 71,
-111
+108
 ]
 },
 {
 "attributes": {},
 "children": [
-93,
-108
+90,
+105
 ],
 "context": "softwares",
-"id": 98,
+"id": 95,
 "objects": [],
 "parents": [
 57,
-99
+96
 ]
 },
 {
 "attributes": {},
 "children": [
-93,
-101
+90,
+98
 ],
 "context": "softwares",
 "id": 56,
 "objects": [],
 "parents": [
 57,
-86
+83
 ]
 },
 {
 "attributes": {},
 "children": [
-101,
-108
+98,
+105
 ],
 "context": "softwares",
-"id": 109,
+"id": 106,
 "objects": [],
 "parents": [
 57,
-111
+108
 ]
 },
 {
@@ -699,14 +685,13 @@
 },
 "children": [
 51,
-60,
-80
+60
 ],
 "context": "softwares",
 "id": 52,
 "objects": [],
 "parents": [
-106
+103
 ]
 },
 {
@@ -716,12 +701,12 @@
 76
 ],
 "context": "softwares",
-"id": 102,
+"id": 99,
 "objects": [],
 "parents": [
-83,
-103,
-105
+80,
+100,
+102
 ]
 },
 {
@@ -730,82 +715,60 @@
 59,
 74,
 78,
-89
+86
 ],
 "context": "softwares",
-"id": 91,
+"id": 88,
 "objects": [],
 "parents": [
-85,
-92,
-103
-]
-},
-{
-"attributes": {
-"exist_software2license": {
-"concepts": [
-15
-],
-"operator": "exist",
-"relation": "software2license",
-"target": "licenses"
-}
-},
-"children": [
-80,
-81
-],
-"context": "softwares",
-"id": 82,
-"objects": [],
-"parents": [
-106
+82,
+89,
+100
 ]
 },
 {
 "attributes": {},
 "children": [
 75,
-89
+86
 ],
 "context": "softwares",
-"id": 90,
+"id": 87,
 "objects": [],
 "parents": [
 70,
-92,
-97
+89,
+94
 ]
 },
 {
 "attributes": {},
 "children": [
 45,
-89
+86
 ],
 "context": "softwares",
-"id": 96,
+"id": 93,
 "objects": [],
 "parents": [
-87,
-97,
-110
+84,
+94,
+107
 ]
 },
 {
 "attributes": {},
 "children": [
 48,
-89
+86
 ],
 "context": "softwares",
-"id": 84,
+"id": 81,
 "objects": [],
 "parents": [
 70,
-85,
-87
+82,
+84
 ]
 },
 {
@@ -815,12 +778,12 @@
 77
 ],
 "context": "softwares",
-"id": 93,
+"id": 90,
 "objects": [],
 "parents": [
 56,
-94,
-98
+91,
+95
 ]
 },
 {
@@ -831,12 +794,12 @@
 77
 ],
 "context": "softwares",
-"id": 108,
+"id": 105,
 "objects": [],
 "parents": [
-98,
-109,
-110
+95,
+106,
+107
 ]
 },
 {
@@ -852,7 +815,7 @@
 "id": 79,
 "objects": [],
 "parents": [
-103
+100
 ]
 },
 {
@@ -866,7 +829,7 @@
 "objects": [],
 "parents": [
 52,
-105
+102
 ]
 },
 {
@@ -876,12 +839,12 @@
 77
 ],
 "context": "softwares",
-"id": 101,
+"id": 98,
 "objects": [],
 "parents": [
 56,
-104,
-109
+101,
+106
 ]
 },
 {
@@ -894,36 +857,8 @@
 "id": 59,
 "objects": [],
 "parents": [
-91,
-102
-]
-},
-{
-"attributes": {},
-"children": [
-69,
-72
-],
-"context": "softwares",
-"id": 81,
-"objects": [],
-"parents": [
-82,
-92
-]
-},
-{
-"attributes": {},
-"children": [
-64,
-69
-],
-"context": "softwares",
-"id": 80,
-"objects": [],
-"parents": [
-52,
-82
+88,
+99
 ]
 },
 {
@@ -938,7 +873,7 @@
 "id": 75,
 "objects": [],
 "parents": [
-90
+87
 ]
 },
 {
@@ -952,7 +887,7 @@
 "objects": [],
 "parents": [
 52,
-92
+89
 ]
 },
 {
@@ -962,13 +897,13 @@
 68
 ],
 "context": "softwares",
-"id": 89,
+"id": 86,
 "objects": [],
 "parents": [
-84,
-90,
-91,
-96
+81,
+87,
+88,
+93
 ]
 },
 {
@@ -981,8 +916,8 @@
 "id": 55,
 "objects": [],
 "parents": [
-83,
-93
+80,
+90
 ]
 },
 {
@@ -997,7 +932,7 @@
 "id": 66,
 "objects": [],
 "parents": [
-112
+109
 ]
 },
 {
@@ -1012,7 +947,7 @@
 "id": 47,
 "objects": [],
 "parents": [
-108
+105
 ]
 },
 {
@@ -1026,7 +961,7 @@
 "objects": [],
 "parents": [
 79,
-91
+88
 ]
 },
 {
@@ -1041,7 +976,7 @@
 "parents": [
 51,
 79,
-102
+99
 ]
 },
 {
@@ -1055,9 +990,9 @@
 "objects": [],
 "parents": [
 79,
-93,
-101,
-108
+90,
+98,
+105
 ]
 },
 {
@@ -1072,7 +1007,7 @@
 "id": 63,
 "objects": [],
 "parents": [
-108
+105
 ]
 },
 {
@@ -1087,7 +1022,7 @@
 "id": 50,
 "objects": [],
 "parents": [
-110
+107
 ]
 },
 {
@@ -1100,8 +1035,8 @@
 "id": 61,
 "objects": [],
 "parents": [
-85,
-101
+82,
+98
 ]
 },
 {
@@ -1118,7 +1053,7 @@
 "SQL-Ledger"
 ],
 "parents": [
-91
+88
 ]
 },
 {
@@ -1151,7 +1086,7 @@
 "Compiere"
 ],
 "parents": [
-81
+89
 ]
 },
 {
@@ -1169,9 +1104,7 @@
 ],
 "parents": [
 60,
-75,
-80,
-81
+75
 ]
 },
 {
@@ -1188,7 +1121,7 @@
 ],
 "parents": [
 75,
-89
+86
 ]
 },
 {
@@ -1236,8 +1169,7 @@
 ],
 "parents": [
 51,
-66,
-80
+66
 ]
 },
 {
@@ -1288,7 +1220,7 @@
 "Openbravo"
 ],
 "parents": [
-89
+86
 ]
 },
 {
@@ -1323,7 +1255,7 @@
 ],
 "parents": [
 61,
-84
+81
 ]
 },
 {
@@ -1360,7 +1292,7 @@
 ],
 "parents": [
 50,
-96
+93
 ]
 },
 {
@@ -1385,7 +1317,7 @@
 "attributes": {
 "exist_software2license": {
 "concepts": [
-16
+18
 ],
 "operator": "exist",
 "relation": "software2license",
@@ -1393,7 +1325,7 @@
 },
 "exist_software2os": {
 "concepts": [
-9
+10
 ],
 "operator": "exist",
 "relation": "software2os",

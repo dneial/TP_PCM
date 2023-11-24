@@ -14,8 +14,9 @@ def gen_os_fc(file: str):
     cols_todrop = [col for col in df.columns if col not in features]
     df = df.drop(cols_todrop, axis=1)
 
-    df2 = df["File system supported"].str.get_dummies(sep=",")
-    df3 = df["Computer architecture supported"].str.get_dummies(sep=",")
+
+    df2 = df["File system supported"].str.get_dummies(sep=",").add_prefix('fs_')
+    df3 = df["Computer architecture supported"].str.get_dummies(sep=",").add_prefix('arch_')
 
     df.drop("File system supported", inplace=True, axis=1)
     df.drop("Computer architecture supported", inplace=True, axis=1)

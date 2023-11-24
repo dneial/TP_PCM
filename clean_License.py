@@ -51,8 +51,6 @@ def gen_licence_fc():
         "Fedora approval",
     ]
 
-    df = pd.get_dummies(df, columns=features, dtype=int)
-
     # rennommage des noms pour correspondre à la table soft
     df.replace("Apache License 2.0", "Apache License", inplace=True)
     df.replace("GNU Lesser General Public License", "GPL", inplace=True)

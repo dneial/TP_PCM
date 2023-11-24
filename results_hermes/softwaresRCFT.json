@@ -1,137 +1,141 @@
 [
 {
 "attributes": {
-"ARM": "ARM",
-"ReiserFS": "ReiserFS",
-"ext3": "ext3",
-"x86": "x86",
-"x86-64": "x86-64"
+"fs": "UDF"
 },
 "children": [
-5,
-7
+10,
+11,
+12
 ],
 "context": "os",
-"id": 9,
+"id": 13,
 "objects": [],
 "parents": []
 },
 {
 "attributes": {
-"ISO 9660": "ISO 9660",
+"arch": "x86",
+"fs": "ext3"
+},
+"children": [
+7,
+9
+],
+"context": "os",
+"id": 12,
+"objects": [],
+"parents": [
+13
+]
+},
+{
+"attributes": {
+"fs": "HFS+"
+},
+"children": [
+8,
+9
+],
+"context": "os",
+"id": 11,
+"objects": [],
+"parents": [
+13
+]
+},
+{
+"attributes": {
 "Kernel type": "Monolithic with modules",
-"PowerPC": "PowerPC",
-"UDF": "UDF"
+"arch": " PowerPC",
+"fs": "ISO 9660"
 },
 "children": [
-5,
-6
+7,
+8
 ],
 "context": "os",
-"id": 8,
+"id": 10,
 "objects": [],
-"parents": []
+"parents": [
+13
+]
 },
 {
 "attributes": {
-"FAT exFAT ISO 9660": "FAT exFAT ISO 9660",
-"FATX": "FATX",
-"HFS+": "HFS+",
 "Kernel type": "Hybrid",
-"NTFS": "NTFS",
-"UDF; 3rd-party drivers support ext2": "UDF; 3rd-party drivers support ext2",
-"and HFS (with third party driver)": "and HFS (with third party driver)"
+"fs": "NTFS"
 },
 "children": [],
 "context": "os",
-"id": 7,
+"id": 9,
 "objects": [
 "Windows"
 ],
 "parents": [
-9
-]
-},
-{
-"attributes": {
-"68k": "68k",
-"AFP": "AFP",
-"FAT(System 7 and later)": "FAT(System 7 and later)",
-"HFS": "HFS",
-"HFS+": "HFS+",
-"MFS (Mac OS 8.0 and before)": "MFS (Mac OS 8.0 and before)"
-},
-"children": [],
-"context": "os",
-"id": 6,
-"objects": [
-"Mac OS"
-],
-"parents": [
-8
-]
-},
-{
-"attributes": {
-"FAT": "FAT",
-"NFS": "NFS",
-"SPARC": "SPARC",
-"and others": "and others",
-"btrfs": "btrfs",
-"ext2": "ext2",
-"ext4": "ext4",
-"others": "others"
-},
-"children": [],
-"context": "os",
-"id": 5,
-"objects": [
-"Linux"
-],
-"parents": [
-8,
-9
-]
-},
-{
-"attributes": {
-"Copyfree approval": "No",
-"Debian approval": "Yes",
-"FSF approval": "Yes",
-"Fedora approval": "Yes",
-"OSI approval": "Yes"
-},
-"children": [
-10,
-11
-],
-"context": "licenses",
-"id": 12,
-"objects": [],
-"parents": []
-},
-{
-"attributes": {
-"GPL (v3) compatibility": "No"
-},
-"children": [],
-"context": "licenses",
-"id": 11,
-"objects": [
-"CPAL",
-"GPL2"
-],
-"parents": [
+11,
 12
 ]
 },
 {
 "attributes": {
-"GPL (v3) compatibility": "Yes"
+"arch": "68k",
+"fs": "MFS"
 },
 "children": [],
+"context": "os",
+"id": 8,
+"objects": [
+"Mac OS"
+],
+"parents": [
+10,
+11
+]
+},
+{
+"attributes": {
+"arch": " others",
+"fs": "others"
+},
+"children": [],
+"context": "os",
+"id": 7,
+"objects": [
+"Linux"
+],
+"parents": [
+10,
+12
+]
+},
+{
+"attributes": {
+"Debian approval": "Debian approval",
+"FSF approval": "FSF approval",
+"Fedora approval": "Fedora approval",
+"OSI approval": "OSI approval"
+},
+"children": [
+15
+],
 "context": "licenses",
-"id": 10,
+"id": 16,
+"objects": [
+"CPAL",
+"GPL2"
+],
+"parents": []
+},
+{
+"attributes": {
+"GPL (v3) compatibility": "GPL (v3) compatibility"
+},
+"children": [
+14
+],
+"context": "licenses",
+"id": 15,
 "objects": [
 "Apache License",
 "AGPL",
@@ -140,14 +144,26 @@
 "MPL"
 ],
 "parents": [
-12
+16
+]
+},
+{
+"attributes": {
+"Copyfree approval": "Copyfree approval"
+},
+"children": [],
+"context": "licenses",
+"id": 14,
+"objects": [],
+"parents": [
+15
 ]
 },
 {
 "attributes": {
 "exist_software2license": {
 "concepts": [
-12
+16
 ],
 "operator": "exist",
 "relation": "software2license",
@@ -155,9 +171,11 @@
 },
 "exist_software2os": {
 "concepts": [
-7,
-8,
-9
+9,
+10,
+11,
+12,
+13
 ],
 "operator": "exist",
 "relation": "software2os",
@@ -179,7 +197,7 @@
 "attributes": {
 "exist_software2license": {
 "concepts": [
-10
+15
 ],
 "operator": "exist",
 "relation": "software2license",
@@ -206,7 +224,7 @@
 "attributes": {
 "exist_software2os": {
 "concepts": [
-5
+7
 ],
 "operator": "exist",
 "relation": "software2os",
@@ -221,8 +239,7 @@
 50,
 53,
 54,
-55,
-56
+55
 ],
 "context": "softwares",
 "id": 57,
@@ -239,8 +256,7 @@
 45,
 46,
 47,
-48,
-56
+48
 ],
 "context": "softwares",
 "id": 51,
@@ -253,7 +269,7 @@
 "attributes": {
 "exist_software2os": {
 "concepts": [
-6
+8
 ],
 "operator": "exist",
 "relation": "software2os",
@@ -263,6 +279,7 @@
 "children": [
 37,
 39,
+41,
 44,
 46,
 47,
@@ -270,8 +287,7 @@
 49,
 50,
 54,
-55,
-56
+55
 ],
 "context": "softwares",
 "id": 58,
@@ -409,31 +425,6 @@
 },
 {
 "attributes": {
-"exist_software2license": {
-"concepts": [
-11
-],
-"operator": "exist",
-"relation": "software2license",
-"target": "licenses"
-}
-},
-"children": [
-28,
-34,
-41
-],
-"context": "softwares",
-"id": 56,
-"objects": [],
-"parents": [
-51,
-57,
-58
-]
-},
-{
-"attributes": {
 "small-sized enterprises": "small-sized enterprises"
 },
 "children": [
@@ -506,9 +497,28 @@
 },
 {
 "attributes": {
+"Java EE": "Java EE"
+},
+"children": [
+56
+],
+"context": "softwares",
+"id": 41,
+"objects": [
+"Compiere"
+],
+"parents": [
+45,
+58
+]
+},
+{
+"attributes": {
 "Delphi": "Delphi"
 },
-"children": [],
+"children": [
+56
+],
 "context": "softwares",
 "id": 38,
 "objects": [
@@ -523,7 +533,9 @@
 "attributes": {
 "Perl": "Perl"
 },
-"children": [],
+"children": [
+56
+],
 "context": "softwares",
 "id": 44,
 "objects": [
@@ -538,7 +550,9 @@
 },
 {
 "attributes": {},
-"children": [],
+"children": [
+56
+],
 "context": "softwares",
 "id": 43,
 "objects": [
@@ -554,7 +568,9 @@
 "GTK+": "GTK+",
 "personal": "personal"
 },
-"children": [],
+"children": [
+56
+],
 "context": "softwares",
 "id": 42,
 "objects": [
@@ -566,27 +582,14 @@
 },
 {
 "attributes": {
-"Java EE": "Java EE"
-},
-"children": [],
-"context": "softwares",
-"id": 41,
-"objects": [
-"Compiere"
-],
-"parents": [
-45,
-56
-]
-},
-{
-"attributes": {
 "Cloud Hostable": "Cloud Hostable",
 "Multi-User": "Multi-User",
 "Web Access": "Web Access",
 "mid-sized enterprises": "mid-sized enterprises"
 },
-"children": [],
+"children": [
+56
+],
 "context": "softwares",
 "id": 40,
 "objects": [
@@ -599,11 +602,31 @@
 },
 {
 "attributes": {
+"Qt": "Qt"
+},
+"children": [
+56
+],
+"context": "softwares",
+"id": 34,
+"objects": [
+"Postbooks"
+],
+"parents": [
+46,
+47,
+55
+]
+},
+{
+"attributes": {
 "On Demand": "On Demand",
 "Saas": "Saas",
 "on-premise": "on-premise"
 },
-"children": [],
+"children": [
+56
+],
 "context": "softwares",
 "id": 37,
 "objects": [
@@ -620,7 +643,9 @@
 "attributes": {
 "small": "small"
 },
-"children": [],
+"children": [
+56
+],
 "context": "softwares",
 "id": 32,
 "objects": [
@@ -636,7 +661,9 @@
 "attributes": {
 "PHP": "PHP"
 },
-"children": [],
+"children": [
+56
+],
 "context": "softwares",
 "id": 36,
 "objects": [
@@ -651,7 +678,9 @@
 },
 {
 "attributes": {},
-"children": [],
+"children": [
+56
+],
 "context": "softwares",
 "id": 35,
 "objects": [
@@ -665,25 +694,10 @@
 ]
 },
 {
-"attributes": {
-"Qt": "Qt"
-},
-"children": [],
-"context": "softwares",
-"id": 34,
-"objects": [
-"Postbooks"
-],
-"parents": [
-46,
-47,
-55,
-56
-]
-},
-{
 "attributes": {},
-"children": [],
+"children": [
+56
+],
 "context": "softwares",
 "id": 33,
 "objects": [
@@ -698,9 +712,29 @@
 },
 {
 "attributes": {
+"OSGi": "OSGi",
+"Oracle": "Oracle"
+},
+"children": [
+56
+],
+"context": "softwares",
+"id": 28,
+"objects": [
+"iDempiere"
+],
+"parents": [
+39,
+47
+]
+},
+{
+"attributes": {
 "high end": "high end"
 },
-"children": [],
+"children": [
+56
+],
 "context": "softwares",
 "id": 31,
 "objects": [
@@ -716,7 +750,9 @@
 "attributes": {
 "Scheme": "Scheme"
 },
-"children": [],
+"children": [
+56
+],
 "context": "softwares",
 "id": 30,
 "objects": [
@@ -732,7 +768,9 @@
 "attributes": {
 "GlassFish": "GlassFish"
 },
-"children": [],
+"children": [
+56
+],
 "context": "softwares",
 "id": 29,
 "objects": [
@@ -745,19 +783,36 @@
 },
 {
 "attributes": {
-"OSGi": "OSGi",
-"Oracle": "Oracle"
+"exist_software2license": {
+"concepts": [
+14
+],
+"operator": "exist",
+"relation": "software2license",
+"target": "licenses"
+}
 },
 "children": [],
 "context": "softwares",
-"id": 28,
-"objects": [
-"iDempiere"
-],
+"id": 56,
+"objects": [],
 "parents": [
-39,
-47,
-56
+28,
+29,
+30,
+31,
+32,
+33,
+34,
+35,
+36,
+37,
+38,
+40,
+41,
+42,
+43,
+44
 ]
 }
 ]
