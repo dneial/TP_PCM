@@ -1,0 +1,85 @@
+FormalContext os
+||Kernel type_Hybrid|Kernel type_Monolithic with modules|fs_AFP|fs_FAT|fs_FAT exFAT ISO 9660|fs_FATX|fs_HFS|fs_HFS+|fs_ISO 9660|fs_MFS|fs_NFS|fs_NTFS|fs_ReiserFS|fs_UDF|fs_btrfs|fs_ext2|fs_ext3|fs_ext4|fs_others|arch_ ARM|arch_ PowerPC|arch_ SPARC|arch_ others|arch_ x86-64|arch_68k|arch_x86|
+|Linux||x||x|||||x||x||x|x|x|x|x|x|x|x|x|x|x|x||x|
+|Mac OS||x|x|x|||x|x|x|x||||x|||||||x||||x||
+|Windows|x||||x|x|x|x||||x|x|x||x|x|||x||||x||x|
+
+FormalContext licenses
+||FSF approval|GPL (v3) compatibility|OSI approval|Copyfree approval|Debian approval|Fedora approval|
+|Apache License|x|x|x||x|x|
+|CPAL|x||x||x|x|
+|AGPL|x|x|x||x|x|
+|GPL2|x||x||x|x|
+|GPL3|x|x|x||x|x|
+|GPL|x|x|x||x|x|
+|MPL|x|x|x||x|x|
+
+FormalContext softwares
+||high end|low|mid|mid-sized enterprises|personal|personal-sized enterprises|small|small-sized enterprises|Client-server|Cloud Hostable|Multi-User|On Demand|Saas|Stand alone|Web Access|Web based|on-premise|GTK+|C|C++|Delphi|GlassFish|Java|Java EE|OSGi|Oracle|PHP|Perl|PostgreSQL|Python|Qt|Scheme|
+|Adempiere|||x|||||||||||||x||||||x|x||||||x||||
+|Apache OFBiz||||x||||x||x|x||||x||||||||x||||||||||
+|Compiere|||x|||||||||||||x||||||||x|||||||||
+|FrontAccounting||x|x|||||||||||||x|||||||||||x||||||
+|GnuCash||||||x||x||||||x|||||x|||||||||||||x|
+|GNU Enterprise|x||x|||||||||||x||x||||||||||||||x|||
+|HomeBank|||||x|||||||||x||||x|x||||||||||||||
+|iDempiere|||x||||||x|||||||x|||||||x||x|x|||x||||
+|JFire|||x||||x|||||||x||x|||||||x||||||||||
+|KMyMoney||||||x||||||||x||||||x|||||||||||||
+|LedgerSMB|||x|||||||||||||x||||||||||||x|||||
+|Openbravo|||x|||||||||x|x|||x|x||||||x||||||||||
+|Odoo||x|x||||||x|||||||x||||||||||||||x|||
+|Postbooks||x|x||||||x|||||||||||x|||||||||||x||
+|SQL-Ledger|||x|||||||||||||x||||||||||||x|||||
+|Tryton||x|x||||||x|||||x||||||||||||||||x|||
+|TurboCASH||x|x|||||||||||x|||||||x||||||||||||
+|webERP||x|x|||||||||||||x|||||||||||x||||||
+
+RelationalContext software2license
+source softwares
+target licenses
+scaling exist
+||Apache License|CPAL|AGPL|GPL2|GPL3|GPL|MPL|
+|Adempiere||||||x||
+|Apache OFBiz|x|||||||
+|Compiere||||x||||
+|FrontAccounting|||||x|||
+|GnuCash||||||x||
+|GNU Enterprise||||||x||
+|HomeBank||||||x||
+|iDempiere||||x||||
+|JFire||||||x||
+|KMyMoney||||||x||
+|LedgerSMB||||||x||
+|Openbravo|||||||x|
+|Odoo|||x|||||
+|Postbooks||x||||||
+|SQL-Ledger||||||x||
+|Tryton||||||x||
+|TurboCASH||||||x||
+|webERP||||||x||
+
+RelationalContext software2os
+source softwares
+target os
+scaling exist
+||Windows|Mac OS|Linux|
+|Adempiere|x|x|x|
+|Apache OFBiz|x|x|x|
+|Compiere|x|x|x|
+|FrontAccounting|x|x|x|
+|GnuCash|x|x|x|
+|GNU Enterprise|x|x|x|
+|HomeBank|x|x|x|
+|iDempiere|x|x|x|
+|JFire|x||x|
+|KMyMoney|x|x|x|
+|LedgerSMB|x|x|x|
+|Openbravo|x|x|x|
+|Odoo|x|x|x|
+|Postbooks|x|x|x|
+|SQL-Ledger|x|x|x|
+|Tryton|x|x|x|
+|TurboCASH|x|x||
+|webERP|x|x|x|
+
