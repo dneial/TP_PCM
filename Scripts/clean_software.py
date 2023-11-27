@@ -2,7 +2,7 @@
 import pandas as pd
 
 
-def gen_software_fc(file: str):
+def gen_software_fc(file, output):
     df = pd.read_csv(file)
 
     df2 = df["Market focus"].str.lower().str.get_dummies(",")
@@ -23,10 +23,10 @@ def gen_software_fc(file: str):
     df.replace("no", "0", inplace=True)
     df.fillna("0", inplace=True)
 
-    df.to_csv("../CleanedData/clean_soft.csv", index=False)
+    df.to_csv(output, index=False)
 
 
-def gen_software2os(file: str):
+def gen_software2os(file, output):
     df = pd.read_csv(file)
     os_list = ["Package", "Windows", "Mac OS", "Linux"]
 
@@ -35,10 +35,10 @@ def gen_software2os(file: str):
     df.replace("Yes", "1", inplace=True)
     df.replace("No", "0", inplace=True)
 
-    df.to_csv("../CleanedData/software2os.csv", index=False)
+    df.to_csv(output, index=False)
 
 
-def gen_software2license(file: str):
+def gen_software2license(file, output):
     df = pd.read_csv(file)
     os_list = ["Package", "License"]
     cols_todrop = [col for col in df.columns if col not in os_list]
@@ -48,11 +48,19 @@ def gen_software2license(file: str):
     df.rename(columns={"MPL derivative with badgeware clause": "MPL"}, inplace=True)
     df["GPL2"] = df["GPL2, other proprietary"] + df["GPL2"]
     df.drop("GPL2, other proprietary", axis=1, inplace=True)
-    df.to_csv("../CleanedData/software2license.csv", index=False)
+    df.to_csv(output, index=False)
 
 
 if __name__ == "__main__":
-    file = "../RawData/Accounting_Soft/Comparison_of_accounting_software_0_raw.csv"
-    gen_software_fc(file)
-    gen_software2os(file)
-    gen_software2license(file)
+    import os
+
+    cur_dir = os.getcwd()
+    filep = "RawData/Accounting_Soft/Comparison_of_accounting_software_0_raw.csv"
+    file = os.path.abspath(os.path.join(cur_dir, filep))
+    output = "CleanedData/clean_soft.csv"
+    output2 = "CleanedData/software2os.csv"
+    output3 = "CleanedData/software2license.csv"
+
+    gen_software_fc(file, output)
+    gen_software2os(file, output2)
+    gen_software2license(file, output3)

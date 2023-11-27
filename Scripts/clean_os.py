@@ -3,20 +3,28 @@
 import pandas as pd
 
 
-def gen_os_fc(file: str):
+def gen_os_fc(file, output):
     df = pd.read_csv(file)
 
     oss = ["Linux", "Windows (NT family)", "Mac OS Classic"]
     df = df[df["Name"].isin(oss)]
 
-    features = ["Name", "Computer architecture supported", "Kernel type", "File system supported"]
+    features = [
+        "Name",
+        "Computer architecture supported",
+        "Kernel type",
+        "File system supported",
+    ]
 
     cols_todrop = [col for col in df.columns if col not in features]
     df = df.drop(cols_todrop, axis=1)
 
-
-    df2 = df["File system supported"].str.get_dummies(sep=",").add_prefix('fs_')
-    df3 = df["Computer architecture supported"].str.get_dummies(sep=",").add_prefix('arch_')
+    df2 = df["File system supported"].str.get_dummies(sep=",").add_prefix("fs_")
+    df3 = (
+        df["Computer architecture supported"]
+        .str.get_dummies(sep=",")
+        .add_prefix("arch_")
+    )
 
     df.drop("File system supported", inplace=True, axis=1)
     df.drop("Computer architecture supported", inplace=True, axis=1)
@@ -26,9 +34,14 @@ def gen_os_fc(file: str):
 
     df.replace("Windows (NT family)", "Windows", inplace=True)
     df.replace("Mac OS Classic", "Mac OS", inplace=True)
-    df.to_csv("../CleanedData/clean_os.csv", index=False)
+    df.to_csv(output, index=False)
 
 
 if __name__ == "__main__":
-    file = "../RawData/OS/Comparison_of_operating_systems_1_raw.csv"
-    gen_os_fc(file)
+    import os
+
+    cur_dir = os.getcwd()
+    filep = "RawData/OS/Comparison_of_operating_systems_1_raw.csv"
+    file = os.path.abspath(os.path.join(cur_dir, filep))
+    output = "CleanedData/clean_os.csv"
+    gen_os_fc(file, output)
