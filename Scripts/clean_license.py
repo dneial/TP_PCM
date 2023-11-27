@@ -4,7 +4,7 @@ import pandas as pd
 
 
 def gen_licence_fc():
-    file = "Licenses/Comparison_of_free_and_open-source_software_licenses_1_raw.csv"
+    file = "../RawData/Licenses/Comparison_of_free_and_open-source_software_licenses_1_raw.csv"
     df = pd.read_csv(file)
 
     # Licenses dans Soft :
@@ -65,7 +65,7 @@ def gen_licence_fc():
     df.replace("Partial", 1, inplace=True)
     df.replace("No", 0, inplace=True)
 
-    df.to_csv("./Cleaned/clean_license.csv", index=False)
+    df.to_csv("../CleanedData/clean_license.csv", index=False)
 
 
 if __name__ == "__main__":

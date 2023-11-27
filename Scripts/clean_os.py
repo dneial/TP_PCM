@@ -26,9 +26,9 @@ def gen_os_fc(file: str):
 
     df.replace("Windows (NT family)", "Windows", inplace=True)
     df.replace("Mac OS Classic", "Mac OS", inplace=True)
-    df.to_csv("./Cleaned/clean_os.csv", index=False)
+    df.to_csv("../CleanedData/clean_os.csv", index=False)
 
 
 if __name__ == "__main__":
-    file = "./OS/Comparison_of_operating_systems_1_raw.csv"
+    file = "../RawData/OS/Comparison_of_operating_systems_1_raw.csv"
     gen_os_fc(file)
