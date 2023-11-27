@@ -1,0 +1,12 @@
+<2> fs_UDF,arch_x86 => fs_ReiserFS,fs_ext2,fs_ext3,arch_ ARM,arch_ x86-64
+<2> fs_UDF,arch_ x86-64 => fs_ReiserFS,fs_ext2,fs_ext3,arch_ ARM,arch_x86
+<2> fs_UDF,arch_ PowerPC => Kernel type_Monolithic with modules,fs_FAT,fs_ISO 9660
+<2> fs_UDF,arch_ ARM => fs_ReiserFS,fs_ext2,fs_ext3,arch_ x86-64,arch_x86
+<2> fs_UDF,fs_ext3 => fs_ReiserFS,fs_ext2,arch_ ARM,arch_ x86-64,arch_x86
+<2> fs_UDF,fs_ext2 => fs_ReiserFS,fs_ext3,arch_ ARM,arch_ x86-64,arch_x86
+<2> fs_ReiserFS,fs_UDF => fs_ext2,fs_ext3,arch_ ARM,arch_ x86-64,arch_x86
+<2> fs_ISO 9660,fs_UDF => Kernel type_Monolithic with modules,fs_FAT,arch_ PowerPC
+<2> fs_HFS+,fs_UDF => fs_HFS
+<2> fs_HFS,fs_UDF => fs_HFS+
+<2> fs_FAT,fs_UDF => Kernel type_Monolithic with modules,fs_ISO 9660,arch_ PowerPC
+<2> Kernel type_Monolithic with modules,fs_UDF => fs_FAT,fs_ISO 9660,arch_ PowerPC

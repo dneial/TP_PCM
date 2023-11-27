@@ -12,8 +12,11 @@ mkdir results_hermes;
 java -jar fca4j.jar RCA softwaresRCFT.rcft ./results_hermes -v -a HERMES -e;
 dot -Tpdf results_hermes/step2.dot -o results_hermes/resultat_hermes.pdf;
 
-mkdir rules/software2os;
-java -jar fca4j.jar RULEBASIS Cleaned/software2os.csv -i CSV -folder ./rules/software2os;
+mkdir rules/software;
+java -jar fca4j.jar RULEBASIS Cleaned/clean_soft.csv -i CSV -folder ./rules/software;
 
-mkdir rules/software2license;
-java -jar fca4j.jar RULEBASIS Cleaned/software2license.csv -i CSV -folder ./rules/software2license;
+mkdir rules/os;
+java -jar fca4j.jar RULEBASIS Cleaned/clean_os.csv -i CSV -folder ./rules/os;
+
+mkdir rules/license;
+java -jar fca4j.jar RULEBASIS Cleaned/clean_license.csv -i CSV -folder ./rules/license;
