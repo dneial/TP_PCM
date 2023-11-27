@@ -1,7 +1,0 @@
-<2> PostgreSQL => mid,Web based,Java
-<2> Perl => mid,Web based
-<2> PHP => low,mid,Web based
-<2> C => Stand alone
-<2> personal-sized enterprises => Stand alone
-<2> mid,Client-server,Python => low
-<2> low,mid,Python => Client-server

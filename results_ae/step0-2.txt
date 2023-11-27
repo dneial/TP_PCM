@@ -1,1 +1,0 @@
-softwares: step=1 nb.concepts=40 nb.attrib rel.=0

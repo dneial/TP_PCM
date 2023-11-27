@@ -1,1 +1,0 @@
-<0> FSF approval,OSI approval,Copyfree approval,Debian approval,Fedora approval => GPL (v3) compatibility

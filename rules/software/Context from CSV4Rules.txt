@@ -1,2 +1,0 @@
-<4> Client-server => mid
-<4> mid,Java => Web based
