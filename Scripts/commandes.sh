@@ -23,6 +23,9 @@ rulebasis_license_dir="$script_dir/../Rulebasis/license"
 
 jar_path="$script_dir/fca4j.jar"
 
+# install pandas
+pip3 install pandas
+
 # nettoyage des données
 python3 "$clean_os_script"
 python3 "$clean_license_script"
