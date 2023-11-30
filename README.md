@@ -1,9 +1,9 @@
 # TP Analyse de variabilité et extraction d'informations
 
 Projet réalisé dans le cadre de l'UE HAI916I par
-Daniel Azevedo Gomes
-Sébastien Prud'homme Gateau
-Tom Simula
+- Daniel Azevedo Gomes
+- Sébastien Prud'homme Gateau
+- Tom Simula
 
 ## Contenu
 - **RawData** : Données brutes
